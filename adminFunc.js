@@ -139,14 +139,14 @@ exports.testLogout = function(req, res, next) {
             flag = true;
             console.log("----------------------============= testLogout Result:=============---------------------", data);
             if(data.isadmin){
-                res.send({"isadmin": true});
+                res.send({"logout": true,"isadmin": true});
             }
             else{
-                res.send({"isadmin": false});
+                res.send({"logout": true, "isadmin": false});
             }
         });
         if(flag == false){
-            res.send({"isadmin": false});
+            res.send({"logout": false, "isadmin": false});
         }
     });
     // res.send({"isadmin": false});
@@ -216,7 +216,7 @@ exports.forgotPass = function(req, res, next) {
             }
         });
         if(flag == false){
-            res.send({"isadmin": false});
+            res.send({"auth": false});
         }
     });
     // res.send({"auth": false});
