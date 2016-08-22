@@ -1,0 +1,11 @@
+{
+  "name": "myServer",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "mongoose": "^4.5.9",
+    "restify": "^4.1.1"
+  }
+}
