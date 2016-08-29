@@ -8,7 +8,9 @@ mongoose
 
 # How to run server
 cd myServer
+
 npm install
+
 node server.js
 
 # API define in server
@@ -50,7 +52,7 @@ http://localhost:3000/login
 server.post('/logout', adminFunc.testLogout);
 
 # URL
-http://localhost:3000/admin
+http://localhost:3000/logout
 
 # INPUT
 {"uid": "myid@123.com"}
@@ -72,7 +74,7 @@ http://localhost:3000/reset-password
 server.post('/forgot-password', adminFunc.forgotPass);
 
 # URL
-http://localhost:3000/admin
+http://localhost:3000/forgot-password
 
 # INPUT
 {"uid": "myid@123.com", "squestion": "Whats ur age", "sanswer": "25" }
